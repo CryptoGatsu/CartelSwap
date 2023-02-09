@@ -2,13 +2,13 @@
     <title>cShib SnipeUI</title>
     <link href = "https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel = "stylesheet" />
     <link rel="stylesheet" href="styles.css"></link>
-    <link rel="icon" type="image/x-icon" href="assets/just_dog.png">
+    <link rel="icon" type="image/x-icon" href="assets/cantos_cartel.png">
 </head>
 
 <body>
 
     <img src="assets/cantos_cartel.png" style="position: absolute; top: 10px; left: calc(50% - 120px); width:100px;"></img> 
-    <h3 style="font-size: 1.7em; position: absolute; top: 05px; left: calc(50% - 15px);"><i>CartelSwap </i> </h3>
+    <h3 style="font-size: 1.7em; position: absolute; top: 05px; left: calc(50% - 15px);"><i>Cartel Swap </i> </h3>
     <h3 style="font-size: 1.7em; position: absolute; top: 30px; left: calc(50% - 15px);"><i>Created by The Cantos </i> </h3>
 
     <div id="main_border">
@@ -35,15 +35,15 @@
             <div id="to_rect" class="buyRect bottom">
                 
                 <h3 id="to_text">Insert CA</h3> <!-- oninput -->
-                <input placeholder="0x" class="numberInput" id="caInput"  oninput=onAddressTyped() onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || ( ( event.charCode == 120 || (event.charCode >= 65 && event.charCode < 71)) || (event.charCode >= 97 && event.charCode < 103)) '/>
+                <input placeholder="0.0" class="numberInput" id="caInput"  oninput=onAddressTyped() onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || ( ( event.charCode == 120 || (event.charCode >= 65 && event.charCode < 71)) || (event.charCode >= 97 && event.charCode < 103)) '/>
             </div>
 
             <!-- Swap Button -->
             <button id="swapButton" class="buyRect swap">
-                <h3 class="swapText" id="swapButtonText">Connect</h3>
+                <h3 class="swapText" id="swapButtonText">CONNECT TO THE SWAP!</h3>
             </button>
 
-            <h4 id="errorMessage"></h4>
+            <h4 id="errorMessage">ERROR! Something went wrong!</h4>
             
         </div>
     </div>
